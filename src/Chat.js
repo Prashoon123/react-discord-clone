@@ -61,6 +61,7 @@ function Chat() {
                         placeholder={`Message #${channelName}`} 
                     />
                     <button 
+                        disabled={!input} 
                         className="chat__inputButton" 
                         type="submit"
                         onClick={sendMessage}
